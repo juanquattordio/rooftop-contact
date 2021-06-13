@@ -1,0 +1,243 @@
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15;
+    font-weight: 400;
+}
+.space{
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 165px;
+    margin-left: 165px;
+    max-width: 1170px;
+    line-height: 1.15;
+}
+.d-flex{
+    display: flex;
+}
+.border{
+    border: red 1px solid;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
+
+::placeholder {
+    color: #444;
+    font-size: .875rem;
+  }
+
+#encabezado{
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2.5rem;
+    margin-top: 3rem;
+    z-index: 1100;
+    max-width: 100%;   
+}
+.logo{
+    align-items: center;
+}
+#encabezado .logo img{
+      height: 38px;
+}
+
+nav{
+    /* width: 380px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item{
+    margin:0 1rem;
+    font-weight: 500;
+    line-height: 1;
+    font-size: .875rem;
+    color: #28323c;
+    text-decoration: none;
+}
+body{
+    background-image: url(contact.jpg);
+    background-repeat: no-repeat;
+    background-position: -70%;
+    background-size: 70%;
+    height: 100vh;
+    min-height: 650px;
+    flex-direction: column;
+    display: flex;
+}
+
+
+#contact{
+    justify-content: space-between;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.section-title{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.section-title p{
+    margin: 1.25rem 0;
+    line-height: 1.5;
+}
+
+.contact-text-section {
+    max-width: 350px;
+}
+.contact-text-section>:last-child {
+    margin: 4rem 0 0;
+    align-items: center;
+}
+.contact-social>*{
+    margin: 0 .25rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    height: 38px;
+    width: 38px;
+    background-color: rgba(0,0,0,.06);
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #28323c;
+    
+}
+.contact-form{
+    min-width: 500px;
+    margin-top: 2rem;
+}
+.contact-form-row{
+    flex: 1 1;
+    width: 100%;
+    margin-bottom: 1rem;
+    align-items: center;
+    border: none;
+    
+}
+.contact-form-row-item{
+    flex-grow: 1;
+    padding: 0 16px;
+    border: 1px solid #bdbdbd;
+    border-radius: .25rem;
+    min-height: 60px;
+    color: #444;
+    font-size: .875rem;
+    position: relative; 
+
+    
+}
+/* .contact-form-row-item label{    Activar si se quiere hacer efecto label 
+    color: #444;
+    padding-top: 0px;
+    font-size: .875rem;
+    position: absolute;
+    left: 1rem;
+    top: 22px;
+    width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+    pointer-events: none;
+} */
+.contact-form>*{
+    justify-content: center;
+    align-items: center;
+}
+.contact-form>*>*{
+    margin: 0 .37rem;
+}
+.contact-form>* :last-child {
+    margin-right: 0;
+}
+.contact-form>* :first-child {
+    margin-left: 0;
+}
+.contact-form-row-item>*{
+    border: none;
+    width: 100%;
+    padding-top: 0px;
+    outline: none;  /*Oculta la línea al hacer focus en input*/
+    
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.5;
+}
+.contact-form-row-item>textarea{
+    padding-top: 1.25rem;
+    resize: none;
+    overflow: auto;
+    min-height: 142px;
+}
+
+.btn-dark{
+    padding: .5rem 1.25rem;
+    background-color: #28323c;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: .5rem;
+    line-height: 1;
+    text-decoration: none;
+}
+.contact-target{
+    margin-bottom: 1.25rem;
+    display: flex;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1.25rem;
+    position: relative;
+}
+.target-icon{
+    padding-top: .25rem;
+    margin-right: .75rem;
+}
+.contact-target p{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+strong{
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+
+.alert{
+    padding: 12px;
+    border: 1px solid red;
+}
+.alert-danger{
+    background-color: red;
+    color: white;
+}
+.alert-overlap{
+    position: absolute;  
+    /* debo configurar 4 propiedades más cuando defino absolute */
+    top: 30px;
+    /* left: 100px; */
+    /* bottom: 250px; */
+    right: 60px;
+    /* Asi se serpara 60px desde la derecha */
+    line-height: 60px;
+    border-radius: 3px;
+}
