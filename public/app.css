@@ -140,8 +140,6 @@ h1{
     color: #444;
     font-size: .875rem;
     position: relative; 
-
-    
 }
 /* .contact-form-row-item label{    Activar si se quiere hacer efecto label 
     color: #444;
@@ -175,7 +173,7 @@ h1{
     width: 100%;
     padding-top: 0px;
     outline: none;  /*Oculta la línea al hacer focus en input*/
-    
+    background-color: white;
     font-family: inherit;
     font-size: 100%;
     line-height: 1.5;
@@ -220,24 +218,54 @@ strong{
     font-size: 1rem;
 }
 
-
-
 .alert{
     padding: 12px;
-    border: 1px solid red;
+    border: 1px solid #dc3545;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .alert-danger{
-    background-color: red;
+    background-color: #dc3545;
     color: white;
 }
 .alert-overlap{
     position: absolute;  
     /* debo configurar 4 propiedades más cuando defino absolute */
-    top: 30px;
+    top: 25px;
     /* left: 100px; */
     /* bottom: 250px; */
-    right: 60px;
+    right: 20px;
     /* Asi se serpara 60px desde la derecha */
     line-height: 60px;
     border-radius: 3px;
+    z-index: 50;
+    display: none;
+    box-shadow: 1px 1px 10px #dc3545 ;
+
+}
+.alert-overlap span{
+margin: 10px 60px 10px 10px;
+}
+#medium-cross img{
+    width: 18px;
+    margin: 20px 20px 20px 20px;
+
+}
+#little-cross img{
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.focus{
+    height: 20px;
+    width: 20px;
+    background-color: #e9959ede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid;
+
+  
+    
 }

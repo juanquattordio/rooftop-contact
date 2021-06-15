@@ -5,4 +5,8 @@ Header:
     Letras originales más negritas.
     Original parecería ser apenas más chico.
 
-    
+Imagen Fondo:
+    No es fija, al reducir el ancho, reduce la imagen
+
+h1:
+    La Poppins no está bien importada.
